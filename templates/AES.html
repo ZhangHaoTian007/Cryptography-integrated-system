@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>密码学综合服务系统</title>
+</head>
+<body>
+<h1>{{ hello }}</h1>
+<ul>
+    <li><a href="/AES">AES</a></li>
+    <li><a href="/RSA">RSA</a></li>
+</ul>
+<h1>AES加密</h1>
+<form action="/AES/" method="post" id="form1" >
+    <dl>
+        <dd>明文：<input type="text" name="Plaintext_post"/></dd>
+        <button type="submit" id="submitform1">加密</button>
+    </dl>
+</form>
+
+<h1>{{ ciphertext_b64 }}</h1>
+
+<h1>AES解密</h1>
+<form action="/AES/" method="post" id="form2" >
+    <dl>
+        <dd>密文：<input type="text" name="ciphertext_post"/></dd>
+        <button type="submit" id="submitform2">解密</button>
+    </dl>
+</form>
+
+<h1>{{ Plaintextt }}</h1>
+</body>
+</html>

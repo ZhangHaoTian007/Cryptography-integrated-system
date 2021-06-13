@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>密码学综合服务系统</title>
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<h1>{{ hello }}</h1>
+<h1>AES加密</h1>
+<form action="/runoob/" method="post" id="form1" >
+    <dl>
+        <dd>明文：<input type="text" name="Plaintext_post"/></dd>
+        <button type="submit" id="submitform1">加密</button>
+    </dl>
+</form>
+
+<h1>{{ ciphertext }}</h1>
+
+<h1>AES解密</h1>
+<form action="/runoob/" method="post" id="form2" >
+    <dl>
+        <dd>密文：<input type="text" name="ciphertext_post"/></dd>
+        <button type="submit" id="submitform2">解密</button>
+    </dl>
+</form>
+
+<h1>{{ Plaintext }}</h1>
+</body>
+</html>
